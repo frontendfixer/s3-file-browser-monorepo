@@ -2,18 +2,22 @@
   "name": "s3-file-browser-monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "turbo run dev --parallel",
     "build": "turbo run build",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
     "lint": "turbo run lint",
-    "clean": "turbo run clean"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.17.0",
   "devDependencies": {
-    "turbo": "^2.6.0"
+    "prettier": "^3.6.2",
+    "turbo": "^2.6.0",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
   }
 }
