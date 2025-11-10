@@ -1,6 +1,6 @@
 {
   "name": "s3-file-browser-monorepo",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "private": true,
   "scripts": {
@@ -14,11 +14,13 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "prettier": "^3.6.2",
     "turbo": "^2.6.0",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.0.0",
   "engines": {
     "node": ">=18"
   }
