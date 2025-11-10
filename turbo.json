@@ -3,16 +3,22 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build", "^db:generate"],
+      "dependsOn": ["^lint", "^build", "^db:generate"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": ["dist/**", "build/**"],
       "env": ["DATABASE_URL"]
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^lint"],
+      "cache": false
+    },
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"],
+      "cache": false
     },
     "check-types": {
-      "dependsOn": ["^check-types"]
+      "dependsOn": ["^check-types"],
+      "cache": false
     },
     "dev": {
       "dependsOn": ["^db:generate"],

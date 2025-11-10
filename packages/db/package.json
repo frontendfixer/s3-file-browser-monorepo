@@ -6,7 +6,9 @@
     "build": "tsc -b",
     "clean": "rm -rf dist",
     "db:generate": "prisma generate",
-    "db:push": "prisma db push"
+    "db:push": "prisma db push",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix"
   },
   "exports": {
     ".": "./src/index.ts"
@@ -16,6 +18,7 @@
     "prisma": "^6.19.0"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
     "@types/node": "^24.10.0"
   }
 }

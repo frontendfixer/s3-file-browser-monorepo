@@ -10,6 +10,7 @@
     "db:push": "turbo run db:push",
     "start": "turbo run start",
     "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
