@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "lint:fix": "eslint . --fix"
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
@@ -21,7 +21,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@repo/biome": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.1.11",
     "@turbo/gen": "^2.5.5",
