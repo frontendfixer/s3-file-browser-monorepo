@@ -1,11 +1,11 @@
 {
-  "extends": "@repo/typescript-config/tanstack.json",
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@repo/ui/*": ["../../packages/ui/src/*"]
-    }
-  }
+	"extends": "@repo/typescript-config/tanstack.json",
+	"include": ["**/*.ts", "**/*.tsx", "**/*.js"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@repo/ui/*": ["../../packages/ui/src/*"]
+		}
+	}
 }

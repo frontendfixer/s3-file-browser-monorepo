@@ -2,9 +2,17 @@
 	"root": false,
 	"extends": ["@repo/biome/config"],
 	"files": {
-		"includes": ["src/**/*"]
+		"includes": ["src/**/*", "!**/*.spec.ts", "!!**/dist"]
 	},
 	"javascript": {
-		"globals": ["describe", "it", "expect", "beforeEach", "afterEach", "beforeAll", "afterAll"]
+		"globals": [
+			"describe",
+			"it",
+			"expect",
+			"beforeEach",
+			"afterEach",
+			"beforeAll",
+			"afterAll"
+		]
 	}
 }
