@@ -1,7 +1,26 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.3.5/schema.json",
 	"extends": ["@repo/biome/config"],
 	"files": {
-		"include": ["src/**/*"]
+		"includes": ["src/**/*"]
+	},
+	"linter": {
+		"rules": {
+			"a11y": {
+				"useSemanticElements": "off",
+				"useKeyWithClickEvents": "off",
+				"useKeyWithMouseEvents": "off",
+				"useFocusableInteractive": "off"
+			},
+			"suspicious": {
+				"noDoubleEquals": "off",
+				"noArrayIndexKey": "off"
+			}
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
 	}
 }
